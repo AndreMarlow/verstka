@@ -6,6 +6,7 @@ body {
 .container {
   max-width: 1200px;
   padding: 0px 30px;
+  margin: 0 auto;
 }
 
 .header__nav {
@@ -70,7 +71,7 @@ body {
 }
 
 .main__card {
-  margin-top: 15px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,6 +89,10 @@ body {
   text-align: center;
   width: 150px;
   height: 200px;
+}
+
+.main__footer {
+  margin-top: 100px;
 }
 
 .main__footer-title {
@@ -114,4 +119,15 @@ body {
   background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .main__card {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 375px) {
+  .main__card {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */
