@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 30px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  background-color: bisque;
+}
+
+.header__nav-button,
+.btn {
+  cursor: pointer;
+  background-color: blue;
+  width: 100px;
+  height: 25px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.header__main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__main-title {
+  text-transform: uppercase;
+  text-align: center;
+  width: 310px;
+}
+
+.header__main-span {
+  text-align: center;
+  background: #5E29B3;
+  background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__title {
+  width: 350px;
+  text-align: center;
+}
+
+.main__title-span {
+  background: #5E29B3;
+  background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__card {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.main__card-item {
+  border: 3px solid snow;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+}
+
+.main__footer-title {
+  text-align: center;
+  width: 250px;
+}
+
+.main__footer-span {
+  background: #5E29B3;
+  background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__footer-span2 {
+  background: #5E29B3;
+  background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__footer-span3 {
+  background: #5E29B3;
+  background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=style.css.map */
