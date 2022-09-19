@@ -1,12 +1,12 @@
 body {
-    background-color: black;
+    background: #08052E;
     color: whitesmoke;
 }
 
 .container {
-    max-width: 1200px;
-    padding: 0px 30px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 0px 30px;
 }
 
 // header nav style start
@@ -17,20 +17,46 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    height: 35px;
-    background-color: bisque;
+    height: 76px;
+    background: #08052E;
+
+    padding: 0px 32px;
+}
+
+.header__nav-logo {
+    width: 30.08px;
+    height: 34px;
 }
 
 .header__nav-button,
 .btn {
     cursor: pointer;
-    background-color: blue;
+    width: 158px;
+    height: 36px;
+    background: linear-gradient(90deg, #493FB5 0%, #312893 100%);
+    border: 1px solid #493FB5;
+    border-radius: 8px;
+    padding: 12px 18px;
+}
 
-    width: 100px;
-    height: 25px;
+.btn-buy {
+    background: rgba(100, 92, 192, 0.4);
+    border: 1px solid #8079CB;
 
-    border: 2px solid blue;
-    border-radius: 5px;
+
+    height: 44px;
+    width: 120px;
+
+    border-radius: 8px;
+    padding: 12px 18px 12px 18px;
+
+}
+
+.btn-app {
+    height: 44px;
+    width: 120px;
+    padding: 12px 18px 12px 18px;
+
 }
 
 // header nav style end
@@ -38,28 +64,54 @@ body {
 // header main style start
 
 .header__main {
-    margin-top: 100px;
+    margin-top: 196px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
+    background: url('./img/Frame\ 10.png') no-repeat center;
+    background-size: auto;
+
+    height: 960px;
+}
+
+.header__main-img {
+    height: 138px;
+    width: 152px;
+    border-radius: 0px;
 }
 
 .header__main-title {
+
     text-transform: uppercase;
     text-align: center;
 
-    width: 310px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 69px;
+    line-height: 84px;
+
+    letter-spacing: 0.01em;
+
+    width: 600px;
+
+    background-image: url('./img/Paws.png');
 }
 
 .header__main-span {
-    text-align: center;
-
-    background: #5E29B3;
-    background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
+    background: linear-gradient(180deg, #6AC9FF 0%, #B9D5FF 17.36%, #9471F7 56.23%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.header__main-button {
+    display: flex;
+    gap: 8px;
 }
 
 // header main style end
@@ -67,24 +119,42 @@ body {
 // main style start 
 
 .main {
-    margin-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.main__image {
+    opacity: 0.5;
+
+    position: relative;
 }
 
 .main__title {
-    width: 350px;
+
+    position: relative;
+    margin-top: -280px;
+
+    width: 800px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
     text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .main__title-span {
-    background: #5E29B3;
-    background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #645CC0;
 }
 
 //main card style end
@@ -92,7 +162,7 @@ body {
 //main card style start
 
 .main__card {
-    margin-top: 100px;
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,8 +171,8 @@ body {
 }
 
 .main__card-item {
-    border: 3px solid snow;
-    background-color: blue;
+    background: #120D48;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,8 +180,28 @@ body {
 
     text-align: center;
 
+    width: 274px;
+    height: 324px;
+}
+
+.main__card-item img {
     width: 150px;
-    height: 200px;
+    height: 166px;
+}
+
+.main__card-item p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    /* or 119% */
+
+    text-align: center;
+
+    /* White/100 */
+
+    color: #FFFFFF;
 }
 
 // main card style end
@@ -120,47 +210,123 @@ body {
 
 .main__footer {
     margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
 .main__footer-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    /* or 121% */
+
     text-align: center;
-    width: 250px;
+    letter-spacing: -0.04em;
+    text-decoration-line: underline;
+
+    width: 600px;
+    height: 116px;
+
+    position: relative;
 }
 
 .main__footer-span {
-    background: #5E29B3;
-    background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #645CC0;
+
 }
 
 .main__footer-span2 {
-    background: #5E29B3;
-    background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #8079CB;
 }
 
 .main__footer-span3 {
-    background: #5E29B3;
-    background: linear-gradient(to right, #5E29B3 86%, #BD66FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #A49FDA;
+}
+
+.main__footer-img {
+    position: absolute;
+    margin-top: 80px;
 }
 
 // main footer style end
 
+// footer style start
+
+.footer {
+    margin-top: 360px;
+    background-color: #08052E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 32px;
+}
+
+.footer__link {
+    margin-right: 32px;
+    text-decoration: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer__logo {
+    width: 30.08px;
+    height: 34px;
+}
+
+.footer__span {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(90deg);
+    margin-right: 32px;
+}
+
+.block {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.ellipse {
+    width: 6px;
+    height: 6px;
+    background: #1BC35C;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
 // responsive start 
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+// @media screen and (min-width: 320px) and (max-width: 374px) {
 
-    .main__card {
-        flex-direction: column;
-    }
-}
+//     .main__card {
+//         flex-direction: column;
+//     }
+// }
 
-@media screen and (min-width: 375px) {
-    .main__card {
-        flex-wrap: wrap;
-    }
-}
+// @media screen and (min-width: 375px) {
+//     .main__card {
+//         flex-wrap: wrap;
+//     }
+// }
