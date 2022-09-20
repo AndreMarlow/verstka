@@ -1,12 +1,23 @@
 body {
   background: #08052E;
   color: whitesmoke;
+  margin: 0;
 }
 
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0px 30px;
+}
+
+button {
+  color: #FFFFFF;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
 }
 
 .header__nav {
@@ -104,6 +115,10 @@ body {
   position: relative;
 }
 
+.main__image_img {
+  width: 75%;
+}
+
 .main__title {
   position: relative;
   margin-top: -280px;
@@ -179,7 +194,7 @@ body {
   text-align: center;
   letter-spacing: -0.04em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   width: 600px;
   height: 116px;
   position: relative;
@@ -200,6 +215,7 @@ body {
 .main__footer-img {
   position: absolute;
   margin-top: 80px;
+  width: 75%;
 }
 
 .footer {
@@ -260,8 +276,11 @@ body {
     flex-direction: column;
   }
 }
+
 @media screen and (min-width: 375px) {
   .main__card {
     flex-wrap: wrap;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
