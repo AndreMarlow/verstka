@@ -96,8 +96,6 @@ body {
     letter-spacing: 0.01em;
 
     width: 600px;
-
-    background-image: url('./img/Paws.png');
 }
 
 .header__main-span {
@@ -318,15 +316,68 @@ body {
 
 // responsive start 
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
 
     .main__card {
         flex-direction: column;
+    }
+
+    .header__main-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 84px;
+        letter-spacing: 0.01em;
+        width: 300px;
+    }
+
+    .main__title {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .main__image {
+        display: none;
+    }
+
+    .main__footer-title {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .main__footer-img {
+        position: absolute;
+        margin-top: 130px;
+        width: 98%;
+    }
+
+    .footer {
+        margin-top: 160px;
+        background-color: #08052E;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__link {
+        margin-right: 16px
     }
 }
 
 @media screen and (min-width: 375px) {
     .main__card {
         flex-wrap: wrap;
+    }
+
+    .main__footer-img {
+        position: absolute;
+        margin-top: 130px;
+        width: 98%;
     }
 }
